@@ -4,33 +4,36 @@
 <head>
   <meta charset="utf-8" />
   <title>The Best Dogs</title>
+
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 </head>
 
 <body>
-    <div class="page-topper"> 
-        <section class="top-header">
-            <div class="top-header-left">
-                <button class="button"><img src="/icons/Dog_Logo.png"></button>
-            </div>
-            <div class="top-header-center">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Top Dogs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="top-header-right">
-                <button type="button">Find A Good Dog</button>
-            </div>
-        </section>
+    <div class="top-header"> 
+        
+        <div class="top-header-left">
+            <button class="button"><img src="/icons/Dog_Logo.png"></button>
+        </div>
+        <div class="top-header-center">
+            <nav>
+                <ul>
+                    <li><button type="header-center-button">Home</button></li>
+                    <li><button type="header-center-button">Top Dogs</button></li>
+                    <li><button type="header-center-button">Dog News</button></li>
+                    <li><button type="header-center-button">About</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="top-header-right">
+            <button type="header-left-button">Find A Good Dog</button>
+        </div>
+       
     </div>
     
     <div class="main-page-container">
         <div class="main-picture">
-            <img src="/images/Background_Dog.jpg" alt="Background Dog" width="1000" height="500">
+            <img src="/images/Background_Dog.jpg" alt="Background Dog">
             <div class="main-picture-button">
                 <p>Daschunds are wonderful animals</p>
                 <button type="button">Find One Today</button>
@@ -38,7 +41,7 @@
         </div>
        
         <div class="main-page-locations">
-            <p>Look At our Locations</p>
+            <p>Look At Our Locations</p>
             <select name="Locations">
                 <option value="newyork">New York</option>
                 <option value="la">Los Angeles</option>
@@ -67,24 +70,26 @@
         </div>
     
         <div class="main-page-dog-advertisment">
-            <img src="/images/Dog_Of_The_Month.jpg" alt="Dog Of The Month" width="800" height="500">
-            <h2>Dog Of The Month</h2>
-            <p>This little guy is our dog of the month</p>
-            <button type="button">See Past Dogs of the Month</button>
+            <img src="/images/Dog_Of_The_Month.jpg" alt="Dog Of The Month">
+            <div class="advertisment-button">
+                <h2>Dog Of The Month</h2>
+                <p>This little guy is our dog of the month</p>
+                <button type="button">See Past Dogs of the Month</button>
+            </div>
         </div>
 
         <div class="main-page-grid">
             <div class="main-page-top-grid">
+                <img src="/images/Dog_Grid_Pic3.jpg" alt="Dog Grid 3">
                 <h2>Dog Header Text 3</h2>
-                <p>Dog Paragragh Test 3</p>
-                <img src="/images/Dog_Grid_Pic3.jpg" alt="Dog Grid 3" width="800" height="800">
+                <p>Dog Paragragh Test 3</p> 
                 <button type="button">Dog Button 3</button>
     
             </div>
             <div class="main-page-top-grid">
+                <img src="/images/Dog_Grid_Pic4.jpg" alt="Dog Grid 4">
                 <h2>Dog Header Text 4</h2>
                 <p>Dog Paragragh Test 4</p>
-                <img src="/images/Dog_Grid_Pic4.jpg" alt="Dog Grid 4">
                 <button type="button">Dog Button 4</button>
                     
             </div>
@@ -97,7 +102,7 @@
     </div>
     <footer> 
         <div class="footer-about">
-            <h2>About</h2>
+            <h2>About Us</h2>
             <ul>
                 <li><a href="#">Our Values</a></li>
                 <li><a href="#">News And Events</a></li>
@@ -107,9 +112,11 @@
         </div>
         <div class="footer-contactus">
             <h2>Connect With Us</h2>
-            <button class="button"><img src="/icons/facebook.png"></button>
-            <button class="button"><img src="/icons/instagram.png"></button>
-            <button class="button"><img src="/icons/twitter.png"></button>
+            <div class="footer-social-media"> 
+                <button class="button"><img src="/icons/facebook.png"></button>
+                <button class="button"><img src="/icons/instagram.png"></button>
+                <button class="button"><img src="/icons/twitter.png"></button>
+            </div>
         </div>
     </footer>
         

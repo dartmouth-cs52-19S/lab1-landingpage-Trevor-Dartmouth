@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: rgb(240,240,240);
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(211,211,211);
+    background-color: rgb(242, 117, 0, 70%);
+}
+.top-header-center {
+    flex-basis: 60%;
+}
+.top-header-left {
+    display: flex;
+    align-items: center;
+}
+.top-header-right {
+    padding-right: 2%
+}
+nav ul { 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-picture {
+    width: 100%
+}
+.main-picture img {
+    display: flex;
+    width: 100%;
+}
+/* Used with help from https://www.w3schools.com/howto/howto_css_image_text.asp to get text on top of image */
+.main-picture-button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.main-page-locations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 117, 0, 70%);
+    width: 100%;
+    height: 40%;
+}
+.main-page-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%
+}
+.main-page-side-grid {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    height: 60%;
+    border: 1px solid rgb(211,211,211);
+}
+.main-page-side-grid img {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    align-self: flex-end;
+}
+.main-page-dog-advertisment {
+    width: 100%
+}
+.main-page-dog-advertisment img { 
+    width: 100%;
+    height: 80%;
+    z-index: 5
+}
+.advertisment-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.main-page-top-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    border: 1px solid rgb(211,211,211);
+}
+.main-page-top-grid img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.main-page-adopt-a-dog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 117, 0, 70%);
+    width: 100%;
+    height: 40%;
+
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 51, 0, 70%);
+}
+footer .footer-social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Help From https://www.w3schools.com/css/css_link.asp on link decoration */
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+  
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+
+
+
