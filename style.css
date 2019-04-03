@@ -2,26 +2,58 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Heebo', sans-serif;
-    background-color: rgb(240,240,240);
+    background-color: rgb(216,182,155);
+    box-sizing: border-box;
+}
+.main-page-container {
+    width: 100%;
+    height: 100%;
 }
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     flex-direction: row;
-    border-bottom: 1px solid rgb(211,211,211);
-    background-color: rgb(242, 117, 0, 70%);
+    border-bottom: 1px solid rgb(213, 157, 107);
+    background-color: rgb(208, 137, 98);
+    width: 100%;
+    height: 10%;
+    z-index: 100;
 }
 .top-header-center {
     flex-basis: 60%;
 }
+.top-header-center nav ul li:hover {
+    color: rgb(0, 0, 153);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.top-header-left .header-left-button {
+    background-color: rgb(119, 61, 49);
+    border: none;
+    cursor: pointer;
+}
+
+.top-header-right .header-right-button {
+    background-color: rgb(119, 61, 49);
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
 .top-header-left {
     display: flex;
     align-items: center;
+    padding-left: 3%
+}
+.top-header-left .header-left-button {
+    border-radius: 50%;
 }
 .top-header-right {
     padding-right: 2%
 }
+
 nav ul { 
     display: flex;
     justify-content: space-around;
@@ -33,7 +65,9 @@ ul {
     margin: 0;
 }
 .main-picture {
-    width: 100%
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(213, 157, 107);
 }
 .main-picture img {
     display: flex;
@@ -43,10 +77,10 @@ ul {
 .main-picture-button {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 20%;
     z-index: 10;
 }
 .main-page-locations {
@@ -54,9 +88,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(242, 117, 0, 70%);
+    background-color: rgb(208, 137, 98);
+    border-bottom: 1px solid rgb(213, 157, 107);
     width: 100%;
-    height: 40%;
 }
 .main-page-grid {
     display: flex;
@@ -64,25 +98,34 @@ ul {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 80%
 }
 .main-page-side-grid {
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
     width: 40%;
-    height: 60%;
+    height: 100%;
     border: 1px solid rgb(211,211,211);
 }
-.main-page-side-grid img {
+
+.main-page-side-grid .side-grid-text{
     display: flex;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    align-self: flex-end;
+    flex-direction: column;
+    flex: 1;
 }
+.main-page-side-grid .side-grid-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%
+}
+
 .main-page-dog-advertisment {
-    width: 100%
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(213, 157, 107);
 }
 .main-page-dog-advertisment img { 
     width: 100%;
@@ -93,8 +136,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 90%;
+    position: absolute;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -119,7 +162,8 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(242, 117, 0, 70%);
+    background-color: rgb(208, 137, 98);
+    border-bottom: 1px solid rgb(213, 157, 107);
     width: 100%;
     height: 40%;
 
@@ -129,7 +173,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 51, 0, 70%);
+    background-color: rgb(119, 61, 49);
+    border-bottom: 1px solid rgb(213, 157, 107);
 }
 footer .footer-social-media {
     display: flex;
