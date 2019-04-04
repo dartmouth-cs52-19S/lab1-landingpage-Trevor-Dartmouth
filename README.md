@@ -6,6 +6,7 @@ Dog_Grid_Pic1.jpg
 https://3p8yljnzz7j2qfl0e1vv6cou-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/dogs.jpg
 Dog_Grid_Pic2.jpg
 http://3.bp.blogspot.com/_kWxiCECsano/RxegrUewS0I/AAAAAAAAAC8/b0M-oJ4-LDk/s400/1kaija8-13-07.jpg
-
+Dog_Grid_Pic3.jpg
+https://images-na.ssl-images-amazon.com/images/I/91+C-yZ5GkL._AC_SX480_SY360_.jpg
 Dog_Grid_Pic4.jpg
 http://lewismanorlabradoodles.com/new/wp-content/uploads/2017/04/header_available2.jpg
