@@ -4,8 +4,10 @@ body {
     font-family: 'Heebo', sans-serif;
     background-color: rgb(216,182,155);
     box-sizing: border-box;
+    height: 100%;
 }
 .main-page-container {
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -44,9 +46,15 @@ body {
 
 .top-header-left {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 3%
+    padding-left: 3%;
 }
+.top-header-left p {
+    padding-left: 2%;
+    font-size: 1.2em; 
+}
+
 .top-header-left .header-left-button {
     border-radius: 50%;
 }
@@ -79,10 +87,45 @@ ul {
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    top: 80%;
-    left: 20%;
+    background-color: rgb(119, 61, 49, .9);
+    top: 84%;
+    left: 11%;
     z-index: 10;
 }
+
+/* Button Animation code taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 */
+.main-picture-button button {
+    background-color: rgb(72, 44, 48, .9);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.main-picture-button button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.main-picture-button button span:after {
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.main-picture-button button:hover span {
+    padding-right: 25px;
+}
+  
+.main-picture-button button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 .main-page-locations {
     display: flex;
     flex-direction: row;
@@ -91,9 +134,11 @@ ul {
     background-color: rgb(208, 137, 98);
     border-bottom: 1px solid rgb(213, 157, 107);
     width: 100%;
+    height: 20%;
 }
 .main-page-grid {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -101,25 +146,33 @@ ul {
 }
 .main-page-side-grid {
     display: flex;
+    position: relative;
     flex-direction: row;
-    align-items: flex-start;
     width: 40%;
-    height: 100%;
     border: 1px solid rgb(211,211,211);
 }
 
 .main-page-side-grid .side-grid-text{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1;
 }
+
+.main-page-side-grid .side-grid-text button {
+    justify-self: flex-end;
+}
+
 .main-page-side-grid .side-grid-img {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 100%
+}
+.main-page-side-grid .side-grid-img img {
+    max-width: 100%;
+    min-height: 100%;
 }
 
 .main-page-dog-advertisment {
@@ -151,12 +204,23 @@ ul {
     height: 60%;
     border: 1px solid rgb(211,211,211);
 }
-.main-page-top-grid img {
+.main-page-top-grid .top-grid-img {
     display: flex;
-    position: relative;
-    width: 100%;
-    height: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
+.main-page-top-grid .top-grid-img img {
+    max-width: 100%;
+    min-height: 100%;
+}
+.main-page-top-grid .top-grid-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .main-page-adopt-a-dog {
     display: flex;
     flex-direction: row;
@@ -181,6 +245,10 @@ footer .footer-social-media {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+footer .footer-social-media button {
+    background-color: rgb(208, 137, 98);
+    border: none;
 }
 /* Help From https://www.w3schools.com/css/css_link.asp on link decoration */
 a:link {
