@@ -474,7 +474,7 @@ a:active {
     }
     .top-header-center {
         font-size: 1.2vh;
-    }
+    } 
 
     .top-header-right .header-right-button {
         font-size: 1.3vh;
@@ -495,7 +495,6 @@ a:active {
     }
 
 }
-
 @media only screen and (max-width: 539px) {
     .main-page-side-grid .side-grid-text {
         font-size: .4em;
