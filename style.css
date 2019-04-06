@@ -203,13 +203,18 @@ ul {
     border: 0.083em solid rgb(211,211,211);
 }
 
-.main-page-side-grid .side-grid-text{
+.main-page-side-grid .side-grid-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     flex: 1;
+}
+
+.main-page-side-grid .side-grid-text p {
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .main-page-side-grid .side-grid-text button {
@@ -311,6 +316,10 @@ ul {
 }
 .main-page-top-grid .top-grid-text h2 {
     align-self: center;
+}
+.main-page-top-grid .top-grid-text p {
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .main-page-top-grid .top-grid-text button {
