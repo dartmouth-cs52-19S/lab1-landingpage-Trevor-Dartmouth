@@ -14,7 +14,7 @@ For my website, I made a landing page for an adoption center for dogs. It includ
 * Resizing and reformatting the page took a lot of work to get right
 
 ### Notes
-* A lot of the text of the HTML and some of the images from the original html screenshots have been changed in the final edition of the website. 
+* A lot of the text of the HTML and some of the images from the original html screenshots have been changed in the final edition of the website. However, the overall structure has not been changed.
 
 
 ### Google Drive Link to Screenshots and Cool Stuff
