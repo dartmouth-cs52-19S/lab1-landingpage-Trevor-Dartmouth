@@ -133,7 +133,7 @@ ul {
     white-space: nowrap;
     justify-content: center;
 }
-/* Button Animation code taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 */
+/* Button Animation code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 */
 .main-picture-button button {
     background-color: rgb(72, 44, 48, .9);
     border: none;
@@ -196,9 +196,14 @@ ul {
     height: 44%;
     font-size: inherit;
     margin: 1.5%;  
-    appearance: none;
-    cursor: pointer;
+    transition: all .5s;
     user-select: none;
+}
+
+.main-page-locations #locations:hover {
+    cursor: pointer;
+    background-color: rgb(216,182,155);
+    border-radius: 1.2em;
 }
 .main-page-grid {
     display: flex;
@@ -288,7 +293,7 @@ ul {
 
 .advertisment-button button {
     background-color: rgb(119, 61, 49);
-    transition: background-color .5s;
+    transition: all .5s;
     color: rgb(208, 137, 98);
     font-size: 1em;
     white-space: nowrap;
@@ -296,6 +301,7 @@ ul {
 
 .advertisment-button button:hover {
     background-color: rgb(72, 44, 48);
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -403,12 +409,14 @@ footer .footer-social-media button {
 }
 footer .footer-social-media button:hover {
     background-color: rgb(216,182,155);
+    border-radius: 15px;
     cursor: pointer;
 }
 
 /* Help From https://www.w3schools.com/css/css_link.asp on link decoration */
-a:link {
+a {
     color: rgb(0, 0, 0);
+    transition: all .3s linear;
     text-decoration: none;
 }
   
@@ -418,8 +426,9 @@ a:visited {
 }
   
 a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
     text-decoration: underline;
+    
 }
 a:active {
     color: rgb(0, 0, 0);
