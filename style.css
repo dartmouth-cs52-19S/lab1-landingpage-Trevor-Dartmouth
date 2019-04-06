@@ -15,7 +15,7 @@ p, h2 {
     cursor: default;
 }
 
-button {
+button, select, input {
     outline: none; 
 }
 
@@ -193,9 +193,10 @@ ul {
 .main-page-locations #locations {
     background-color: rgb(119, 61, 49, .5);
     width: 20%;
-    height: 40%;
+    height: 44%;
     font-size: inherit;
-    border: none;
+    margin: 1.5%;  
+    appearance: none;
     cursor: pointer;
     user-select: none;
 }
@@ -372,6 +373,7 @@ ul {
     background-color: rgb(119, 61, 49);
     color: rgb(216,182,155);
     font-size: inherit;
+    margin: 1.5%;
     border: none;
 }
 
