@@ -465,14 +465,15 @@ a:active {
     .main-page-top-grid .top-grid-text {
         font-size: .6em;
     }
-
-    .top-header-center {
-        opacity: 0;
-        width: 0px;
-        height: 0px;
-    }
     .top-header {
         height: 5%;
+    }
+
+    .top-header-left p {
+        font-size: 1.8vh;
+    }
+    .top-header-center {
+        font-size: 1.2vh;
     }
 
     .top-header-right .header-right-button {
